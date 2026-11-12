@@ -31,10 +31,11 @@ When a fire, flood or theft happens, insurers ask what you owned, what it cost a
 
 - [x] Planning
 - [x] Wireframes (desktop and mobile)
-- [ ] UI design (Home and Dashboard)
+- [x] UI design (Home and Dashboard)
 - [ ] Build
 
 ## Docs
 
 - Full plan: [`docs/PLANNING.md`](docs/PLANNING.md)
 - Wireframes: [`docs/wireframes/`](docs/wireframes/)
+- UI design: [`docs/design/`](docs/design/)
