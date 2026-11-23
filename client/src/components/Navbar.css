@@ -45,3 +45,29 @@
   color: var(--black);
   text-decoration: none;
 }
+
+.navbar-menu {
+  display: none;
+  border: none;
+  background: var(--white);
+  border-radius: 999px;
+  padding: 8px;
+  color: var(--black);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 20px;
+  }
+
+  .navbar-links,
+  .navbar-actions {
+    display: none;
+  }
+
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+  }
+}

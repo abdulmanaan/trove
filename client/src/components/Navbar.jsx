@@ -1,4 +1,4 @@
-import { CaretDown } from "@phosphor-icons/react";
+import { CaretDown, List } from "@phosphor-icons/react";
 import "./Navbar.css";
 
 function Navbar() {
@@ -12,7 +12,7 @@ function Navbar() {
         <a href="#">Pricing</a>
         <a href="#" className="navbar-dropdown">
           Resources
-          <CaretDown size={16} />
+          <CaretDown weight="bold" size={16} />
         </a>
         <a href="#">About</a>
       </nav>
@@ -20,6 +20,9 @@ function Navbar() {
         <a href="#">Log in</a>
         <button className="btn btn-primary">Get started</button>
       </div>
+      <button className="navbar-menu">
+        <List weight="bold" size={24} aria-label="Open-menu" />
+      </button>
     </header>
   );
 }
