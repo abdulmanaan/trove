@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+}
+
+.navbar-logo {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 32px;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.navbar-logo span {
+  color: var(--orange-500);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 40px;
+}
+
+.navbar-links a {
+  font-size: 16px;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.navbar-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar-actions a {
+  font-size: 16px;
+  color: var(--black);
+  text-decoration: none;
+}
