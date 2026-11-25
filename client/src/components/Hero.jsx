@@ -1,6 +1,31 @@
 import "./Hero.css";
+import camera from "../assets/hero/camera.png";
+import ring from "../assets/hero/ring.png";
+import bag from "../assets/hero/bag.png";
+import painting from "../assets/hero/painting.png";
+import armchair from "../assets/hero/armchair.png";
+import watch from "../assets/hero/watch.png";
 
 function Hero() {
+  const heroItems = [
+    { name: "Camera", price: "$2,150", image: camera, className: "item-camera" },
+    { name: "Ring", price: "$5,600", image: ring, className: "item-ring" },
+    { name: "Bag", price: "$3,900", image: bag, className: "item-bag" },
+    {
+      name: "Painting",
+      price: "$18,500",
+      image: painting,
+      className: "item-painting",
+    },
+    {
+      name: "Armchair",
+      price: "$3,200",
+      image: armchair,
+      className: "item-armchair",
+    },
+    { name: "Watch", price: "$8,400", image: watch, className: "item-watch" },
+  ];
+
   return (
     <section className="hero">
       <h1 className="hero-heading">
@@ -17,6 +42,20 @@ function Hero() {
         <a href="#calculator" className="btn btn-secondary">
           Check your coverage
         </a>
+      </div>
+      {heroItems.map((item) => (
+        <div key={item.name} className={`hero-item ${item.className}`}>
+          {" "}
+          <img src={item.image} alt={item.name} />{" "}
+          <span className="hero-tag">{item.price}</span>{" "}
+        </div>
+      ))}
+      <div className="hero-coverage">
+        <p className="hero-coverage-label">Coverage</p>
+        <p className="hero-coverage-value">82%</p>
+        <div className="bar">
+          <div className="bar-fill" style={{ width: "82%" }}></div>
+        </div>
       </div>
     </section>
   );

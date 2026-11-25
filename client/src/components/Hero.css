@@ -6,6 +6,8 @@
   text-align: center;
   gap: 32px;
   padding: 56px 80px 120px;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-heading {
@@ -30,4 +32,102 @@
 .hero-buttons {
   display: flex;
   gap: 16px;
+}
+
+.hero-heading,
+.hero-text,
+.hero-buttons {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-item {
+  position: absolute;
+  width: 168px;
+  height: 168px;
+  background: var(--white);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.hero-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 28px;
+}
+
+.hero-tag {
+  position: absolute;
+  bottom: -12px;
+  right: -16px;
+  background: var(--white);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+}
+
+.item-camera {
+  top: 40px;
+  left: 120px;
+  transform: rotate(-8deg);
+}
+
+.item-ring {
+  top: 270px;
+  left: 250px;
+  transform: rotate(6deg);
+}
+
+.item-bag {
+  top: 490px;
+  left: 110px;
+  transform: rotate(4deg);
+}
+
+.item-painting {
+  top: 30px;
+  right: 200px;
+  transform: rotate(-7deg);
+}
+
+.item-armchair {
+  top: 260px;
+  right: 300px;
+  transform: rotate(6deg);
+}
+
+.item-watch {
+  top: 490px;
+  right: 110px;
+  transform: rotate(-8deg);
+}
+
+.hero-coverage {
+  position: absolute;
+  width: 192px;
+  background: var(--white);
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 8px;
+  top: 580px;
+  right: 330px;
+  transform: rotate(12deg);
+}
+
+.hero-coverage-label {
+  font-size: 14px;
+  color: var(--grey-600);
+}
+
+.hero-coverage-value {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 700;
 }
