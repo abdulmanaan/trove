@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 80px;
+  position: relative;
 }
 
 .navbar-logo {
@@ -56,6 +57,10 @@
   cursor: pointer;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 16px 20px;
@@ -69,5 +74,28 @@
   .navbar-menu {
     display: flex;
     align-items: center;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 24px 20px;
+    background: var(--off-white);
+    box-shadow: var(--shadow);
+  }
+
+  .mobile-menu a {
+    font-size: 20px;
+    color: var(--black);
+    text-decoration: none;
+  }
+
+  .mobile-menu .btn {
+    width: 100%;
   }
 }

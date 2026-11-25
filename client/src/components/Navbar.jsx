@@ -1,7 +1,10 @@
-import { CaretDown, List } from "@phosphor-icons/react";
+import { CaretDownIcon, ListIcon, XIcon } from "@phosphor-icons/react";
+import { useState } from "react";
 import "./Navbar.css";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="navbar">
       <a href="/" className="navbar-logo">
@@ -12,7 +15,7 @@ function Navbar() {
         <a href="#">Pricing</a>
         <a href="#" className="navbar-dropdown">
           Resources
-          <CaretDown weight="bold" size={16} />
+          <CaretDownIcon weight="bold" size={16} />
         </a>
         <a href="#">About</a>
       </nav>
@@ -20,9 +23,27 @@ function Navbar() {
         <a href="#">Log in</a>
         <button className="btn btn-primary">Get started</button>
       </div>
-      <button className="navbar-menu">
-        <List weight="bold" size={24} aria-label="Open-menu" />
+      <button
+        className="navbar-menu"
+        onClick={() => setIsOpen(!isOpen)}
+        aria-label={isOpen ? "Close menu" : "Open menu"}
+      >
+        {isOpen ? (
+          <XIcon weight="bold" size={24} />
+        ) : (
+          <ListIcon weight="bold" size={24} />
+        )}
       </button>
+      {isOpen && (
+        <div className="mobile-menu">
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Resources</a>
+          <a href="#">About</a>
+          <a href="#">Log in</a>
+          <button className="btn btn-primary">Get started</button>
+        </div>
+      )}
     </header>
   );
 }
