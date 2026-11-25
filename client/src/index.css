@@ -44,6 +44,10 @@ h3 {
   border: none;
   cursor: pointer;
   transition: background 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .btn-primary {
@@ -53,4 +57,14 @@ h3 {
 
 .btn-primary:hover {
   background: var(--orange-600);
+}
+
+.btn-secondary {
+  background: var(--white);
+  color: var(--black);
+  border: 1px solid var(--grey-200);
+}
+
+.btn-secondary:hover {
+  border-color: var(--black);
 }
