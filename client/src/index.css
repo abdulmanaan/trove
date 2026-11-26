@@ -81,3 +81,54 @@ h3 {
   background: var(--orange-500);
   border-radius: 999px;
 }
+
+.section-label {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--orange-500);
+}
+
+.section-heading {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.section-text {
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--grey-600);
+}
+
+.card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+.chip {
+  font-size: 14px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.chip-red {
+  background: var(--red-10);
+  color: var(--red);
+}
+
+@media (max-width: 600px) {
+  .section-heading {
+    font-size: 44px;
+    line-height: 44px;
+  }
+
+  .section-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

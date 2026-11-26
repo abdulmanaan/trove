@@ -48,9 +48,13 @@
 @media (max-width: 1100px) {
   .stats-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: normal;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-evenly;
     gap: 48px;
+  }
+
+  .stats-source {
+    align-self: center;
   }
 }
 
@@ -66,6 +70,7 @@
 
   .stats-list {
     grid-template-columns: 1fr 1fr;
+    justify-content: normal;
     gap: 32px 16px;
   }
 }
