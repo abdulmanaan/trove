@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Stats from "./components/Stats";
 import Problem from "./components/Problem";
 import Preview from "./components/Preview";
+import Features from "./components/Features";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Stats />
       <Problem />
       <Preview />
+      <Features />
     </>
   );
 }

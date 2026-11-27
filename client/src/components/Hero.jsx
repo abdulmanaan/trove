@@ -7,31 +7,31 @@ import armchair from "../assets/hero/armchair.png";
 import watch from "../assets/hero/watch.png";
 import CoverageCard from "./CoverageCard";
 
-function Hero() {
-  const heroItems = [
-    {
-      name: "Camera",
-      price: "$2,150",
-      image: camera,
-      className: "item-camera",
-    },
-    { name: "Ring", price: "$5,600", image: ring, className: "item-ring" },
-    { name: "Bag", price: "$3,900", image: bag, className: "item-bag" },
-    {
-      name: "Painting",
-      price: "$18,500",
-      image: painting,
-      className: "item-painting",
-    },
-    {
-      name: "Armchair",
-      price: "$3,200",
-      image: armchair,
-      className: "item-armchair",
-    },
-    { name: "Watch", price: "$8,400", image: watch, className: "item-watch" },
-  ];
+const heroItems = [
+  {
+    name: "Camera",
+    price: "$2,150",
+    image: camera,
+    className: "item-camera",
+  },
+  { name: "Ring", price: "$5,600", image: ring, className: "item-ring" },
+  { name: "Bag", price: "$3,900", image: bag, className: "item-bag" },
+  {
+    name: "Painting",
+    price: "$18,500",
+    image: painting,
+    className: "item-painting",
+  },
+  {
+    name: "Armchair",
+    price: "$3,200",
+    image: armchair,
+    className: "item-armchair",
+  },
+  { name: "Watch", price: "$8,400", image: watch, className: "item-watch" },
+];
 
+function Hero() {
   return (
     <section className="hero">
       <h1 className="hero-heading">

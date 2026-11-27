@@ -1,29 +1,29 @@
 import "./Stats.css";
 
-function Stats() {
-  const stats = [
-    {
-      number: "20%",
-      label: "of insured homeowners updated a home inventory last year",
-      highlight: false,
-    },
-    {
-      number: "25%",
-      label: "have never made one at all",
-      highlight: false,
-    },
-    {
-      number: "2 in 3",
-      label: "homes may be underinsured",
-      highlight: true,
-    },
-    {
-      number: "74%",
-      label: "of Marshall Fire policyholders were underinsured",
-      highlight: false,
-    },
-  ];
+const stats = [
+  {
+    number: "20%",
+    label: "of insured homeowners updated a home inventory last year",
+    highlight: false,
+  },
+  {
+    number: "25%",
+    label: "have never made one at all",
+    highlight: false,
+  },
+  {
+    number: "2 in 3",
+    label: "homes may be underinsured",
+    highlight: true,
+  },
+  {
+    number: "74%",
+    label: "of Marshall Fire policyholders were underinsured",
+    highlight: false,
+  },
+];
 
+function Stats() {
   return (
     <section className="stats">
       <ul className="stats-list">
