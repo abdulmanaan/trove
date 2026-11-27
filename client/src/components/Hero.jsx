@@ -5,10 +5,16 @@ import bag from "../assets/hero/bag.png";
 import painting from "../assets/hero/painting.png";
 import armchair from "../assets/hero/armchair.png";
 import watch from "../assets/hero/watch.png";
+import CoverageCard from "./CoverageCard";
 
 function Hero() {
   const heroItems = [
-    { name: "Camera", price: "$2,150", image: camera, className: "item-camera" },
+    {
+      name: "Camera",
+      price: "$2,150",
+      image: camera,
+      className: "item-camera",
+    },
     { name: "Ring", price: "$5,600", image: ring, className: "item-ring" },
     { name: "Bag", price: "$3,900", image: bag, className: "item-bag" },
     {
@@ -50,13 +56,7 @@ function Hero() {
           <span className="hero-tag">{item.price}</span>{" "}
         </div>
       ))}
-      <div className="hero-coverage">
-        <p className="hero-coverage-label">Coverage</p>
-        <p className="hero-coverage-value">82%</p>
-        <div className="bar">
-          <div className="bar-fill" style={{ width: "82%" }}></div>
-        </div>
-      </div>
+      <CoverageCard percent={82} className="hero-coverage" />
     </section>
   );
 }

@@ -107,29 +107,10 @@
 
 .hero-coverage {
   position: absolute;
-  width: 192px;
-  background: var(--white);
-  border-radius: 20px;
-  padding: 16px;
-  box-shadow: var(--shadow);
-  display: flex;
-  flex-direction: column;
   text-align: left;
-  gap: 8px;
   top: 580px;
   right: 330px;
   transform: rotate(12deg);
-}
-
-.hero-coverage-label {
-  font-size: 14px;
-  color: var(--grey-600);
-}
-
-.hero-coverage-value {
-  font-family: var(--font-heading);
-  font-size: 32px;
-  font-weight: 700;
 }
 
 @media (max-width: 1100px) {

@@ -1,0 +1,21 @@
+.coverage-card {
+  width: 192px;
+  background: var(--white);
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.coverage-card-label {
+  font-size: 14px;
+  color: var(--grey-600);
+}
+
+.coverage-card-value {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 700;
+}
